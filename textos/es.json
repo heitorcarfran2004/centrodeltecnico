@@ -1,0 +1,376 @@
+{
+  "_leia": "Todo o texto da página mora aqui (espanhol LATAM, 'tú'). Edite este arquivo e rode `node _montar.cjs`; nunca edite o index.html gerado. O LINK DO CHECKOUT fica só em config.checkout. {{p.unico}} etc. viram o preço formatado em USD.",
+  "config": {
+    "lang": "es",
+    "saida": ".",
+    "moeda": {
+      "simbolo": "US$",
+      "antes": true,
+      "espaco": true,
+      "decimal": ".",
+      "milhar": ","
+    },
+    "precos": {
+      "_nota": "unico = o que a pessoa paga. valorProducto + soma dos bonus.itens[].valor = ancla (valor total tachado). Ancla definida pelo webdesigner, sem fonte de mercado: o Heitor pode trocar.",
+      "unico": 17,
+      "valorProducto": 37
+    },
+    "garantiaDias": 30,
+    "checkout": "#checkout",
+    "_checkout": "TROCAR: quando o gateway estiver definido, colar o link aqui (um lugar só). Todo botão de compra usa este valor e tem o atributo data-checkout.",
+    "backRedirect": false,
+    "_backRedirect": "Desligado: a oferta de saída (promo) ainda não tem preço nem checkout. Ligar só quando o Heitor decidir; aí criar _fonte/promo.html.",
+    "pixelMeta": "TROCAR-PIXEL-META"
+  },
+  "meta": {
+    "titulo": "120 Diagnósticos Visuales para Hardware y Software",
+    "descricao": "120 diagnósticos visuales de computadoras: síntoma, posibles causas y orden recomendado de pruebas en una sola página. Acceso inmediato por correo, de por vida, por {{p.unico}}.",
+    "marca": "120 DIAGNÓSTICOS VISUALES"
+  },
+  "topo": "⚡ OFERTA ESPECIAL DISPONIBLE SOLO HOY <span class=\"js-data\"></span>",
+  "hero": {
+    "pill": "120 DIAGNÓSTICOS VISUALES PARA HARDWARE Y SOFTWARE",
+    "h1": "Encuentra la falla de hardware o software siguiendo el <span class=\"neon\">orden correcto de pruebas</span>",
+    "sub": "120 diagnósticos visuales organizados por síntoma, posibles causas y orden recomendado de pruebas, listos para consultar mientras reparas.",
+    "imgAlt": "Caja de los 120 Diagnósticos Visuales para Hardware y Software con las fichas de diagnóstico",
+    "p1": "Ya sabes hacer mantenimiento. El problema aparece cuando llega una computadora con falla y te surge la duda: <b>¿por dónde empiezo?</b>",
+    "p2": "Pruebas la memoria, revisas la fuente, buscas en Google, ves un video, intentas otra cosa… y cuando te das cuenta ya perdiste un buen rato sin saber si estabas siguiendo el mejor orden.",
+    "p3": "Con los <b>120 Diagnósticos Visuales para Hardware y Software</b> buscas el síntoma que presenta la computadora, revisas las posibles causas y sigues un orden de pruebas que va de lo más simple y barato a lo más invasivo.",
+    "p4": "No es un curso para ver. No es un método complicado para memorizar. Es una referencia visual para tener en el celular, la tablet o la computadora y consultar cuando la necesites.",
+    "lista": [
+      "120 diagnósticos visuales de hardware y software",
+      "Organizados por las fallas y síntomas más comunes",
+      "Posibles causas y orden recomendado de pruebas",
+      "Consulta rápida en plena reparación",
+      "Lenguaje técnico simple y organización visual"
+    ],
+    "cta": "QUIERO LOS 120 DIAGNÓSTICOS",
+    "entrega": "📩 Recibes todo al instante en tu correo electrónico"
+  },
+  "fichas": {
+    "h2": "MIRA CÓMO SON LOS DIAGNÓSTICOS QUE VAS A RECIBIR",
+    "tabletAlt": "Ficha de diagnóstico abierta en una tablet sobre el banco de trabajo",
+    "dica": "Toca una ficha para verla en grande",
+    "tablet": {
+      "img": "assets/tablet.webp"
+    },
+    "trilho1": [
+      {
+        "img": "assets/fichas/001.webp",
+        "alt": "Diagnóstico 001: La computadora no enciende y no da ninguna señal"
+      },
+      {
+        "img": "assets/fichas/011.webp",
+        "alt": "Diagnóstico 011: Enciende pero no muestra imagen en el monitor"
+      },
+      {
+        "img": "assets/fichas/021.webp",
+        "alt": "Diagnóstico 021: El sistema no inicia y muestra error de arranque"
+      },
+      {
+        "img": "assets/fichas/031.webp",
+        "alt": "Diagnóstico 031: La computadora se reinicia sola durante el uso"
+      },
+      {
+        "img": "assets/fichas/041.webp",
+        "alt": "Diagnóstico 041: La placa emite beeps en el POST y no inicia"
+      },
+      {
+        "img": "assets/fichas/051.webp",
+        "alt": "Diagnóstico 051: El SSD no aparece en la BIOS ni en el sistema"
+      }
+    ]
+  },
+  "possui": {
+    "h2": "CADA DIAGNÓSTICO VISUAL TIENE:",
+    "itens": [
+      {
+        "icone": "sintoma",
+        "txt": "El síntoma y las posibles causas en la misma página"
+      },
+      {
+        "icone": "ordem",
+        "txt": "Un orden recomendado de pruebas, de lo más simple a lo más invasivo"
+      },
+      {
+        "icone": "hwsw",
+        "txt": "Contenido de hardware y de software"
+      },
+      {
+        "icone": "visual",
+        "txt": "Formato visual para consultar durante la reparación"
+      }
+    ]
+  },
+  "urgencia": {
+    "h2": "Aprovecha la oferta por tiempo limitado",
+    "p": "¿Cuánto tiempo más vas a perder buscando qué prueba hacer primero?",
+    "cta": "QUIERO ACCEDER AHORA",
+    "trilho2": [
+      {
+        "img": "assets/fichas/063.webp",
+        "alt": "Diagnóstico 063: Capacitores hinchados o con fuga en la placa"
+      },
+      {
+        "img": "assets/fichas/071.webp",
+        "alt": "Diagnóstico 071: Pantalla azul aparece al iniciar el sistema"
+      },
+      {
+        "img": "assets/fichas/081.webp",
+        "alt": "Diagnóstico 081: Computadora muy lenta en tareas simples"
+      },
+      {
+        "img": "assets/fichas/091.webp",
+        "alt": "Diagnóstico 091: Dispositivo desconocido con alerta amarilla"
+      },
+      {
+        "img": "assets/fichas/102.webp",
+        "alt": "Diagnóstico 102: Wi-Fi conectado, pero sin internet"
+      },
+      {
+        "img": "assets/fichas/111.webp",
+        "alt": "Diagnóstico 111: La computadora no reproduce ningún sonido"
+      }
+    ]
+  },
+  "ideal": {
+    "h2": "ESTE MATERIAL ES IDEAL PARA TI SI QUIERES",
+    "itens": [
+      {
+        "tit": "Saber por dónde empezar",
+        "txt": "Recibir una computadora con falla y tener una referencia para ver qué revisiones conviene hacer primero."
+      },
+      {
+        "tit": "Dejar de probar piezas al azar",
+        "txt": "Seguir el diagnóstico en un orden lógico, en vez de saltar de una posibilidad a otra."
+      },
+      {
+        "tit": "Diagnosticar más rápido",
+        "txt": "Consultar síntomas, causas y pruebas sin abrir diez videos, foros y artículos en medio de la reparación."
+      },
+      {
+        "tit": "Cometer menos errores de diagnóstico",
+        "txt": "Revisar los puntos clave antes de concluir y evitar pruebas y cambios de piezas que no hacían falta."
+      },
+      {
+        "tit": "Ordenar tu razonamiento técnico",
+        "txt": "Tener una referencia visual para no depender solo de la memoria al analizar cada falla."
+      },
+      {
+        "tit": "Atender con más seguridad",
+        "txt": "Saber qué revisar antes de decirle al cliente dónde está el problema."
+      }
+    ]
+  },
+  "recebe": {
+    "h2": "TODO LO QUE VAS A RECIBIR",
+    "pill": "⚡ ACCESO INMEDIATO",
+    "h3": "120 DIAGNÓSTICOS ORGANIZADOS PARA CONSULTAR DURANTE EL MANTENIMIENTO",
+    "p": "Identificas el síntoma, abres el diagnóstico que corresponde y revisas las posibles causas y el orden recomendado de las pruebas.",
+    "imgAlt": "Caja de los 120 Diagnósticos Visuales con los 4 bonos incluidos",
+    "produto": "120 Diagnósticos Visuales para Hardware y Software",
+    "catTit": "12 categorías, 10 diagnósticos en cada una:",
+    "categorias": [
+      "Energía / Fuente de poder",
+      "Video / Pantalla",
+      "Arranque / POST / BIOS",
+      "Temperatura",
+      "Memoria RAM",
+      "Almacenamiento (SSD / disco duro)",
+      "Placa madre / Procesador",
+      "Sistema operativo / Pantalla azul",
+      "Lentitud / Rendimiento",
+      "Controladores (drivers)",
+      "Red e internet",
+      "Audio, USB y periféricos"
+    ],
+    "fichaTit": "Cada diagnóstico trae:",
+    "ficha": [
+      "Síntoma observado",
+      "Posibles causas, de la más común a la menos común",
+      "Orden recomendado de pruebas",
+      "Verificaciones importantes",
+      "Observaciones para no equivocarte en el diagnóstico",
+      "Material visual y estandarizado"
+    ]
+  },
+  "bonus": {
+    "h2": "Y NO TERMINA AHÍ… ¡HAY MÁS!",
+    "sub": "También vas a recibir…",
+    "pill": "🎁 4 BONOS INCLUIDOS",
+    "valorTxt": "Valor:",
+    "gratis": "GRATIS",
+    "itens": [
+      {
+        "img": "assets/bonus-1.webp",
+        "tit": "Checklist de Mantenimiento Preventivo",
+        "txt": "Una secuencia de revisión para usar antes de entregarle la computadora al cliente y no olvidarte de ninguna verificación importante.",
+        "valor": 9
+      },
+      {
+        "img": "assets/bonus-2.webp",
+        "tit": "Guía de Compatibilidad: Placa Madre, Procesador y Memoria",
+        "txt": "Consulta rápida para revisar compatibilidades y evitar errores en upgrades y armados.",
+        "valor": 9
+      },
+      {
+        "img": "assets/bonus-3.webp",
+        "tit": "Lista de Herramientas Esenciales",
+        "txt": "Qué herramientas vale la pena comprar primero, sobre todo si estás empezando.",
+        "valor": 9
+      },
+      {
+        "img": "assets/bonus-4.webp",
+        "tit": "Tabla de Pruebas Rápidas",
+        "txt": "Una hoja resumen con el orden de las pruebas principales para las fallas más comunes. Para imprimir, guardar en el celular o dejar siempre a mano en el banco de trabajo.",
+        "valor": 9
+      }
+    ]
+  },
+  "oferta": {
+    "faixa": "🔥 ÚLTIMA OPORTUNIDAD: LA OFERTA TERMINA HOY",
+    "tit": "ACCESO COMPLETO",
+    "tag": "⚡ 120 diagnósticos + 4 bonos",
+    "imgAlt": "Los 120 Diagnósticos Visuales y los 4 bonos",
+    "itens": [
+      "120 Diagnósticos Visuales para Hardware y Software",
+      "Diagnósticos organizados por síntoma",
+      "Posibles causas y orden recomendado de pruebas",
+      "Contenido de hardware y de software",
+      "Material visual para consulta rápida"
+    ],
+    "bonusPrefixo": "🎁 Bono",
+    "extras": [
+      "Acceso de por vida a todo el material",
+      "Garantía de {{garantiaDias}} días"
+    ],
+    "de": "Valor total:",
+    "por": "Hoy, por solo:",
+    "unico": "Pago único · sin mensualidades",
+    "economia": "Ahorras {{p.ahorro}}",
+    "cta": "QUIERO MI ACCESO POR {{p.unico}}",
+    "argumento": "✓ UNA SOLA PIEZA CAMBIADA SIN NECESIDAD PUEDE COSTARTE MÁS QUE ESTE MATERIAL.",
+    "argumento2": "Los diagnósticos se quedan contigo para consultarlos cada vez que llegue una nueva reparación.",
+    "seguro": "🔒 Compra 100% segura y garantizada."
+  },
+  "garantia": {
+    "h2": "GARANTÍA DE {{garantiaDias}} DÍAS: CERO RIESGO PARA TI",
+    "selo1": "SATISFACCIÓN GARANTIZADA",
+    "selo2": "{{garantiaDias}} DÍAS",
+    "selo3": "O TU DINERO DE VUELTA",
+    "selo4": "GARANTÍA",
+    "intro": "Si en los próximos {{garantiaDias}} días sientes que:",
+    "itens": [
+      "los diagnósticos no son lo que esperabas,",
+      "el material no sirve para el tipo de servicio que haces,",
+      "o simplemente no quieres seguir con él,"
+    ],
+    "fim": "pides el reembolso y te devolvemos el 100% de tu dinero. Sin preguntas y sin trámites. Todo el riesgo queda de nuestro lado."
+  },
+  "acesso": {
+    "h2": "CÓMO ES EL ACCESO",
+    "sub": "(Mira lo fácil que es acceder a los diagnósticos)",
+    "passos": [
+      {
+        "icone": "compra",
+        "tit": "Completa tu compra",
+        "txt": "Después del pago, tu acceso se libera automáticamente.",
+        "itens": [
+          "Pago seguro",
+          "Confirmación inmediata",
+          "Acceso directo al material"
+        ]
+      },
+      {
+        "icone": "email",
+        "tit": "Revisa tu correo",
+        "txt": "En ese mismo momento te llega un correo con el acceso a los diagnósticos y a los bonos.",
+        "itens": [
+          "Llega al instante",
+          "Diagnósticos separados por categoría",
+          "Los 4 bonos incluidos"
+        ]
+      },
+      {
+        "icone": "baixar",
+        "tit": "Descarga los archivos",
+        "txt": "Ábrelos en el celular, la tablet o la computadora.",
+        "itens": [
+          "Consulta digital",
+          "Fácil de abrir durante la reparación",
+          "Material organizado"
+        ]
+      },
+      {
+        "icone": "consulta",
+        "tit": "Consulta mientras reparas",
+        "txt": "Abre el diagnóstico en el momento de la reparación.",
+        "itens": [
+          "Búsqueda por síntoma y categoría",
+          "Consulta mientras atiendes",
+          "Acceso de por vida"
+        ]
+      }
+    ],
+    "cta": "QUIERO ACCEDER AHORA"
+  },
+  "faq": {
+    "h2": "PREGUNTAS FRECUENTES",
+    "itens": [
+      {
+        "p": "¿Es un curso de mantenimiento?",
+        "r": "No. Los 120 Diagnósticos Visuales son un material de consulta para apoyarte durante el diagnóstico de computadoras. La idea no es enseñarte mantenimiento desde cero, sino organizar síntomas, posibles causas y pruebas para que tengas una referencia rápida cuando la necesites."
+      },
+      {
+        "p": "Ya hice un curso de mantenimiento. ¿Este material me sirve?",
+        "r": "Sí. De hecho, es uno de los perfiles para los que fue creado. Tal vez ya sabes probar memoria, fuente, SSD y otros componentes. Lo que los diagnósticos te ayudan a ordenar es <b>cuándo revisar cada posibilidad y por dónde empezar</b> según el síntoma que presenta la computadora."
+      },
+      {
+        "p": "¿Sirve si estoy empezando?",
+        "r": "Sí. Lo pueden usar estudiantes, técnicos que recién empiezan y personas que arreglan computadoras como ingreso extra. También sirve de apoyo para quien ya atiende clientes y quiere una referencia ordenada durante el diagnóstico."
+      },
+      {
+        "p": "¿No encuentro esta información gratis en internet?",
+        "r": "Mucha información técnica está en videos, foros, artículos y manuales. La diferencia es que aquí está organizada para consultar: buscas el síntoma y encuentras las posibles causas y un orden recomendado de pruebas, sin tener que investigar en varias fuentes en medio de la reparación."
+      },
+      {
+        "p": "¿Sirve para hardware y para software?",
+        "r": "Sí. Reúne diagnósticos de hardware y de software, incluyendo componentes, BIOS, controladores (drivers) y sistema operativo."
+      },
+      {
+        "p": "¿Tiene diagnósticos para problemas de Windows?",
+        "r": "Sí. Las categorías Sistema operativo / Pantalla azul, Controladores (drivers) y Lentitud / Rendimiento cubren fallas de arranque, pantallas azules, drivers y rendimiento."
+      },
+      {
+        "p": "¿Sirve para laptops?",
+        "r": "El material está pensado para computadoras de escritorio. Muchas fallas de memoria, almacenamiento, sistema, drivers y red se diagnostican igual en una laptop, pero no trae diagnósticos específicos de laptop."
+      },
+      {
+        "p": "¿El material va a diagnosticar la computadora solo?",
+        "r": "No. El diagnóstico técnico lo haces tú. El material es una referencia para ordenar posibles causas, verificaciones y la secuencia de pruebas, para que no dependas solo de la memoria o de búsquedas durante la reparación."
+      },
+      {
+        "p": "¿Sirve para cualquier falla?",
+        "r": "Reúne 120 diagnósticos de las fallas y síntomas más comunes de hardware y software. No promete cubrir todas las fallas posibles de cualquier computadora: es una referencia organizada para una gran variedad de situaciones que se repiten en el día a día del mantenimiento."
+      },
+      {
+        "p": "¿Cómo recibo el material?",
+        "r": "Al instante, en tu correo electrónico, apenas se confirma el pago. El acceso es de por vida."
+      },
+      {
+        "p": "¿Tiene mensualidad?",
+        "r": "No. Es un pago único de {{p.unico}} y el material es tuyo, con los 4 bonos incluidos."
+      },
+      {
+        "p": "¿Y si no me gusta?",
+        "r": "Tienes {{garantiaDias}} días de garantía. Si no te sirve, pides el reembolso y te devolvemos el 100% de tu dinero."
+      }
+    ]
+  },
+  "rodape": {
+    "direitos": "© Todos los derechos reservados.",
+    "aviso": "Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que sales de Facebook, la responsabilidad no es de ellos sino de nuestro sitio. Hacemos todo lo posible por mostrar claramente el producto. No vendemos tu correo ni tus datos a terceros y nunca enviamos spam.",
+    "termos": "Términos de uso",
+    "privacidade": "Política de privacidad"
+  }
+}

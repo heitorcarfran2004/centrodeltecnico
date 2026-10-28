@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- GERADO por _montar.cjs a partir de _fonte/index.html + textos/<idioma>.json. Nao edite o index.html na mao. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>120 Diagnósticos Visuales para Hardware y Software</title>
+<meta name="description" content="120 diagnósticos visuales de computadoras: síntoma, posibles causas y orden recomendado de pruebas en una sola página. Acceso inmediato por correo, de por vida, por US$ 17.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B1F2A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛠️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@700;800;900&display=swap">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+
+<!-- META PIXEL: trocar o ID (config.pixelMeta no textos/es.json) quando o pixel da conta LATAM desta oferta existir -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', 'TROCAR-PIXEL-META');
+fbq('track', 'PageView');
+</script>
+
+<!-- UTMify: TROCAR-UTMIFY. Quando a oferta tiver o pixel da UTMify (conta LATAM), colar aqui o script dela,
+     como em funis/brincos-micanga-es. Enquanto isso, fica só o script padrão que guarda as UTMs: -->
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids async defer></script>
+
+<!-- ============================================================
+     CHECKOUT: ticket único US$ 17. O link mora num lugar só: config.checkout no textos/es.json
+     (hoje "#checkout"). Todo botão de compra tem o atributo data-checkout.
+     Os outros botões (href="#oferta") só rolam até o card da oferta, como na página original.
+     ============================================================ -->
+
+<style>
+:root{
+  --navy:#0B1F2A; --navy2:#112B3A; --navy3:#173A4D;
+  --neon:#22B8F0; --neon-claro:#E3F5FD;
+  --ouro:#F2B84B; --verde:#18A058; --verde-esc:#12804A; --vermelho:#D93A3A;
+  --tinta:#18232B; --cinza:#4A5B68; --borda:#DCE5EB;
+  --fundo:#F2F6F8; --branco:#fff;
+  --raio:16px;
+  --tit:"Poppins","Inter",system-ui,-apple-system,sans-serif;
+  --txt:"Inter",system-ui,-apple-system,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:var(--txt);color:var(--tinta);background:var(--fundo);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+b,strong{font-weight:700}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+.estreito{max-width:760px;margin:0 auto}
+section{padding:64px 0}
+.escuro{background:var(--navy);color:#fff}
+.claro{background:var(--fundo)}
+.branco{background:var(--branco)}
+h1,h2,h3{font-family:var(--tit);letter-spacing:-.02em;line-height:1.12}
+h2{font-size:clamp(28px,6.4vw,46px);font-weight:900;text-align:center}
+.neon{color:var(--neon)}
+.centro{text-align:center}
+
+/* faixa do topo */
+.topo{background:var(--ouro);color:#1A1405;text-align:center;font-weight:800;font-size:15px;padding:11px 14px;letter-spacing:.02em}
+
+/* botao */
+.btn{display:block;width:100%;max-width:520px;margin:30px auto 0;background:var(--verde);color:#fff;text-decoration:none;
+  text-align:center;font:800 19px/1.25 var(--txt);text-transform:uppercase;letter-spacing:.01em;padding:21px 26px;border-radius:999px;
+  box-shadow:0 14px 30px -10px rgba(24,160,88,.6);transition:transform .2s, background .2s;animation:pulsa 2.2s ease-in-out infinite}
+.btn:hover{background:var(--verde-esc);transform:scale(1.03)}
+@keyframes pulsa{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@media (prefers-reduced-motion:reduce){.btn{animation:none}}
+.entrega{text-align:center;font-size:15px;margin-top:14px;opacity:.85}
+
+/* HERO */
+.hero{background:radial-gradient(120% 70% at 50% 0%,#14384C 0%,var(--navy) 62%);color:#fff;padding:44px 0 60px}
+.pill{display:inline-block;border:1px solid rgba(34,184,240,.55);color:var(--neon);background:rgba(34,184,240,.08);
+  font:800 13px/1.3 var(--txt);letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:999px}
+.hero h1{font-size:clamp(31px,7.4vw,56px);font-weight:900;margin:20px auto 0;max-width:900px}
+.hero .sub{font-size:clamp(17px,2.4vw,20px);color:#C9D7E0;max-width:760px;margin:18px auto 0}
+.hero-img{width:100%;max-width:620px;margin:28px auto 0}
+.hero .texto{max-width:720px;margin:26px auto 0;text-align:left;color:#DCE6EC}
+.hero .texto p+p{margin-top:14px}
+.hero .texto b{color:#fff}
+.checks{list-style:none;max-width:560px;margin:28px auto 0;text-align:left}
+.checks li{position:relative;padding:9px 0 9px 36px;font-weight:600;border-bottom:1px solid rgba(255,255,255,.08)}
+.checks li:last-child{border-bottom:0}
+.checks li::before{content:"";position:absolute;left:0;top:11px;width:22px;height:22px;border-radius:50%;
+  background:var(--verde) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/14px no-repeat}
+
+/* carrossel em faixa (marquee) */
+.faixa{width:100%;overflow:hidden;margin-top:34px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.trilho{display:flex;width:max-content;animation:anda 48s linear infinite}
+.faixa:hover .trilho,.faixa.parado .trilho{animation-play-state:paused}
+.trilho figure{flex:0 0 auto;padding:0 10px;cursor:zoom-in}
+.trilho img{height:clamp(440px,62vw,580px);width:auto;border-radius:10px;box-shadow:0 18px 40px -18px rgba(0,0,0,.55)}
+@keyframes anda{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.dica{text-align:center;font-size:14px;color:var(--cinza);margin-top:10px}
+.escuro .dica{color:#9FB3C1}
+.tablet{width:100%;max-width:560px;margin:28px auto 0;border-radius:var(--raio)}
+
+/* zoom */
+.zoom{position:fixed;inset:0;z-index:50;background:rgba(5,14,20,.92);display:flex;align-items:center;justify-content:center;padding:16px}
+.zoom[hidden]{display:none}
+.zoom img{max-height:92vh;max-width:100%;width:auto;border-radius:8px}
+.zoom-x{position:absolute;top:10px;right:14px;background:none;border:0;color:#fff;font-size:40px;line-height:1;cursor:pointer}
+
+/* rascunho: ?refs na URL contorna de vermelho as imagens emprestadas */
+.mostra-refs [data-placeholder="ref"]{outline:4px solid red;outline-offset:-4px}
+
+/* cards */
+.grade{display:grid;gap:16px;margin-top:34px}
+@media (min-width:700px){.g2{grid-template-columns:1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}}
+@media (min-width:520px) and (max-width:699px){.g4{grid-template-columns:1fr 1fr}}
+.card{background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:22px}
+.possui .card{text-align:center;font-weight:700;font-size:17px;line-height:1.4}
+@media (max-width:699px){.possui .grade{grid-template-columns:1fr 1fr;gap:12px}.possui .card{font-size:15px;padding:16px 12px}}
+.ico{width:58px;height:58px;border-radius:16px;background:var(--navy);color:var(--neon);display:flex;align-items:center;justify-content:center;margin:0 auto 14px}
+.ico svg{width:30px;height:30px}
+.ideal .card{display:flex;gap:14px;align-items:flex-start}
+.ideal .num{flex:0 0 38px;height:38px;border-radius:50%;background:var(--neon-claro);color:#0A6C93;font:900 17px/38px var(--tit);text-align:center}
+.ideal h3{font-size:19px;font-weight:800;margin-bottom:4px}
+.ideal p{color:var(--cinza);font-size:16px;line-height:1.5}
+
+/* o que recebe */
+.recebe .pill{background:var(--neon-claro);color:#0A6C93;border-color:#9ED9F2}
+.recebe h3.grande{font-size:clamp(20px,4vw,28px);font-weight:900;margin-top:16px}
+.recebe .lead{color:var(--cinza);max-width:680px;margin:12px auto 0}
+.pacote-img{width:100%;max-width:560px;margin:26px auto 0}
+.caixa{background:var(--fundo);border:1px solid var(--borda);border-radius:var(--raio);padding:24px 20px;margin-top:26px}
+.caixa h4{font:800 20px/1.3 var(--tit);text-align:center}
+.caixa .rot{font-weight:800;margin:20px 0 10px;font-size:16px;color:var(--navy3);text-transform:uppercase;letter-spacing:.04em}
+.cats{list-style:none;display:grid;grid-template-columns:1fr;gap:8px}
+@media (min-width:560px){.cats{grid-template-columns:1fr 1fr}}
+.cats li{background:var(--branco);border:1px solid var(--borda);border-radius:10px;padding:10px 12px;font-weight:600;font-size:15.5px;display:flex;gap:10px;align-items:center}
+.cats li i{font-style:normal;flex:0 0 28px;height:28px;border-radius:8px;background:var(--navy);color:var(--neon);font:800 13px/28px var(--txt);text-align:center}
+.mini{list-style:none;display:grid;gap:6px}
+@media (min-width:560px){.mini{grid-template-columns:1fr 1fr}}
+.mini li{padding-left:26px;position:relative;font-size:16px}
+.mini li::before{content:"✓";position:absolute;left:4px;color:var(--verde);font-weight:900}
+
+/* bonus */
+.bonus .sub{text-align:center;color:var(--cinza);font-size:19px;margin-top:8px}
+.bonus .pill{display:table;margin:18px auto 0;background:var(--ouro);color:#1A1405;border-color:var(--ouro)}
+.bon{display:grid;gap:16px;align-items:center;background:var(--branco);border:1px solid var(--borda);border-radius:var(--raio);padding:18px}
+@media (min-width:640px){.bon{grid-template-columns:240px 1fr;padding:22px}}
+.bon img{border-radius:12px;width:100%;max-width:300px;margin:0 auto}
+.bon .tag{display:inline-block;background:var(--navy);color:var(--neon);font:800 12.5px/1 var(--txt);letter-spacing:.1em;padding:7px 11px;border-radius:6px}
+.bon h3{font-size:21px;font-weight:800;margin:10px 0 6px}
+.bon p{color:var(--cinza);font-size:16px}
+.bon .val{margin-top:10px;font-weight:700}
+.bon .val s{color:var(--vermelho)}
+.bon .val span{color:var(--verde);font-weight:900;margin-left:6px}
+
+/* oferta */
+.oferta{background:radial-gradient(110% 60% at 50% 0%,#14384C 0%,var(--navy) 65%)}
+.oferta-card{max-width:560px;margin:0 auto;background:var(--branco);color:var(--tinta);border-radius:22px;overflow:hidden;
+  box-shadow:0 30px 70px -25px rgba(0,0,0,.7);border:3px solid var(--ouro)}
+.oferta-card .fx{background:var(--vermelho);color:#fff;text-align:center;font-weight:800;font-size:14.5px;padding:11px 12px;letter-spacing:.02em}
+.oferta-card .in{padding:24px 22px 28px}
+.oferta-card h3{font-size:30px;font-weight:900;text-align:center}
+.oferta-card .tag{display:table;margin:10px auto 0;background:var(--navy);color:var(--neon);font-weight:800;font-size:14px;padding:7px 14px;border-radius:999px}
+.oferta-card .img{width:100%;max-width:380px;margin:16px auto 0}
+.lista{list-style:none;margin-top:18px}
+.lista li{padding:8px 0 8px 30px;position:relative;font-size:16px;border-bottom:1px dashed var(--borda)}
+.lista li::before{content:"✓";position:absolute;left:6px;color:var(--verde);font-weight:900}
+.lista li.b{font-weight:700}
+.lista li.b::before{content:""}
+.preco{text-align:center;margin-top:20px}
+.preco .de{color:var(--cinza);font-size:17px}
+.preco .de s{color:var(--vermelho);font-weight:700}
+.preco .por{font-size:16px;font-weight:700;margin-top:6px}
+.preco .valor{font:900 64px/1 var(--tit);color:var(--verde);letter-spacing:-.03em;margin-top:4px}
+.preco .unico{font-size:14.5px;color:var(--cinza);margin-top:6px}
+.preco .eco{display:inline-block;margin-top:10px;background:#E8F7EE;color:var(--verde-esc);font-weight:800;font-size:15px;padding:6px 14px;border-radius:999px}
+.oferta-card .btn{margin-top:22px}
+.arg{text-align:center;margin-top:20px;font-weight:800;font-size:15px;color:var(--navy3)}
+.arg2{text-align:center;color:var(--cinza);font-size:15px;margin-top:6px}
+.seguro{text-align:center;font-size:14.5px;margin-top:14px;color:var(--cinza)}
+
+/* garantia */
+.garantia .linha{display:grid;gap:26px;align-items:center;margin-top:30px}
+@media (min-width:700px){.garantia .linha{grid-template-columns:260px 1fr}}
+.selo{width:240px;height:240px;margin:0 auto;border-radius:50%;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  background:radial-gradient(circle at 50% 40%,#2A2A2A 0%,#0F0F0F 70%);border:10px solid #D4A93E;box-shadow:0 0 0 5px #1A1A1A,0 0 0 9px #D4A93E,0 20px 40px -14px rgba(0,0,0,.5);color:#F6D98A;text-align:center;padding-bottom:58px}
+.selo .s1{font:800 10.5px/1.3 var(--txt);letter-spacing:.12em;color:#D4A93E;max-width:150px}
+.selo .s2{font:900 46px/1 var(--tit);margin-top:6px;color:#F6D98A}
+.selo .s3{font:700 11.5px/1.2 var(--txt);letter-spacing:.06em;color:#fff;margin-top:4px}
+.selo .s4{position:absolute;bottom:26px;left:-18px;right:-18px;background:linear-gradient(180deg,#F2CF6E,#C9962E);color:#1A1405;font:900 24px/1 var(--tit);letter-spacing:.08em;padding:9px 0;border-radius:4px;box-shadow:0 6px 14px -6px rgba(0,0,0,.6)}
+.garantia ul{list-style:none;margin:10px 0}
+.garantia ul li{padding:4px 0 4px 24px;position:relative}
+.garantia ul li::before{content:"•";position:absolute;left:8px;color:var(--neon);font-weight:900}
+.garantia p.fim{font-weight:600}
+
+/* acesso */
+.acesso .sub{text-align:center;color:var(--cinza);text-transform:uppercase;letter-spacing:.2em;font-weight:700;font-size:13px;margin-top:10px}
+.passo{text-align:center}
+.passo .ico{width:64px;height:64px;background:var(--navy);margin-bottom:14px}
+.passo h3{font-size:21px;font-weight:800}
+.passo p{color:var(--cinza);font-size:16px;margin-top:6px}
+.passo ul{list-style:none;display:inline-block;text-align:left;margin-top:10px}
+.passo li{font-size:15px;padding:2px 0 2px 22px;position:relative}
+.passo li::before{content:"✓";position:absolute;left:2px;color:var(--verde);font-weight:900}
+.passo .n{display:block;font:800 12px/1 var(--txt);letter-spacing:.14em;color:#0A6C93;margin-bottom:6px}
+
+/* faq */
+.faq details{background:var(--branco);border:1px solid var(--borda);border-radius:14px;margin-top:12px}
+.faq summary{list-style:none;cursor:pointer;padding:18px 48px 18px 20px;font-weight:700;font-size:17px;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-size:26px;color:#0A6C93;font-weight:600}
+.faq details[open] summary::after{content:"−"}
+.faq details p{padding:0 20px 18px;color:var(--cinza);font-size:16px}
+
+/* rodape */
+footer{background:var(--navy);color:#9FB3C1;font-size:13.5px;text-align:center;padding:34px 0 40px;line-height:1.6}
+footer p+p{margin-top:10px}
+footer a{color:#C9D7E0}
+</style>
+</head>
+<body>
+
+<!-- ícones (desenhados aqui, sem imagem de terceiros) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-sintoma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><path d="M7 10h2l1.5-3 3 6 1.5-3h2"/></symbol>
+  <symbol id="i-ordem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h10M10 12h10M10 18h10"/><path d="M4 5.5l1.5-1V9M3.6 13.5c.3-.9 2.6-1.1 2.4.4-.1.9-2.4 2-2.4 3.1h2.6"/></symbol>
+  <symbol id="i-hwsw" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><rect x="9.5" y="9.5" width="5" height="5"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+  <symbol id="i-visual" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M9 7h6M9 11h6M9 15h3"/><circle cx="16.5" cy="17.5" r="2.5"/><path d="M18.3 19.3L20 21"/></symbol>
+  <symbol id="i-compra" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M2.5 10h19M6.5 15h4"/></symbol>
+  <symbol id="i-email" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="M3 6.5l9 6.5 9-6.5"/></symbol>
+  <symbol id="i-baixar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5"/><path d="M4 17v2.5A1.5 1.5 0 0 0 5.5 21h13a1.5 1.5 0 0 0 1.5-1.5V17"/></symbol>
+  <symbol id="i-consulta" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/><path d="M7.8 10.6l1.8 1.8 3.4-3.6"/></symbol>
+</svg>
+
+<!-- 0 · FAIXA DO TOPO -->
+<div class="topo">⚡ OFERTA ESPECIAL DISPONIBLE SOLO HOY <span class="js-data"></span></div>
+
+<!-- 1 · HERO -->
+<header class="hero">
+  <div class="wrap centro">
+    <span class="pill">120 DIAGNÓSTICOS VISUALES PARA HARDWARE Y SOFTWARE</span>
+    <h1>Encuentra la falla de hardware o software siguiendo el <span class="neon">orden correcto de pruebas</span></h1>
+    <p class="sub">120 diagnósticos visuales organizados por síntoma, posibles causas y orden recomendado de pruebas, listos para consultar mientras reparas.</p>
+    <img class="hero-img" src="assets/hero.webp" width="1000" height="1000" alt="Caja de los 120 Diagnósticos Visuales para Hardware y Software con las fichas de diagnóstico" fetchpriority="high">
+    <div class="texto">
+      <p>Ya sabes hacer mantenimiento. El problema aparece cuando llega una computadora con falla y te surge la duda: <b>¿por dónde empiezo?</b></p>
+      <p>Pruebas la memoria, revisas la fuente, buscas en Google, ves un video, intentas otra cosa… y cuando te das cuenta ya perdiste un buen rato sin saber si estabas siguiendo el mejor orden.</p>
+      <p>Con los <b>120 Diagnósticos Visuales para Hardware y Software</b> buscas el síntoma que presenta la computadora, revisas las posibles causas y sigues un orden de pruebas que va de lo más simple y barato a lo más invasivo.</p>
+      <p>No es un curso para ver. No es un método complicado para memorizar. Es una referencia visual para tener en el celular, la tablet o la computadora y consultar cuando la necesites.</p>
+    </div>
+    <ul class="checks"><li>120 diagnósticos visuales de hardware y software</li><li>Organizados por las fallas y síntomas más comunes</li><li>Posibles causas y orden recomendado de pruebas</li><li>Consulta rápida en plena reparación</li><li>Lenguaje técnico simple y organización visual</li></ul>
+    <a class="btn" href="#oferta">QUIERO LOS 120 DIAGNÓSTICOS</a>
+    <p class="entrega">📩 Recibes todo al instante en tu correo electrónico</p>
+  </div>
+</header>
+
+<!-- 2 · COMO SÃO AS FICHAS (carrossel 1).
+     As fichas (12 nossas, 1 por categoria) ficam em assets/fichas/ e são listadas no textos/es.json. -->
+<section class="claro" id="fichas">
+  <div class="wrap">
+    <h2>MIRA CÓMO SON LOS DIAGNÓSTICOS QUE VAS A RECIBIR</h2>
+    <img class="tablet" src="assets/tablet.webp" width="900" height="900" alt="Ficha de diagnóstico abierta en una tablet sobre el banco de trabajo" loading="lazy" >
+  </div>
+  <div class="faixa"><div class="trilho" id="trilho">
+    <figure><img src="assets/fichas/001.webp" width="600" height="800" alt="Diagnóstico 001: La computadora no enciende y no da ninguna señal" loading="lazy" ></figure><figure><img src="assets/fichas/011.webp" width="600" height="800" alt="Diagnóstico 011: Enciende pero no muestra imagen en el monitor" loading="lazy" ></figure><figure><img src="assets/fichas/021.webp" width="600" height="800" alt="Diagnóstico 021: El sistema no inicia y muestra error de arranque" loading="lazy" ></figure><figure><img src="assets/fichas/031.webp" width="600" height="800" alt="Diagnóstico 031: La computadora se reinicia sola durante el uso" loading="lazy" ></figure><figure><img src="assets/fichas/041.webp" width="600" height="800" alt="Diagnóstico 041: La placa emite beeps en el POST y no inicia" loading="lazy" ></figure><figure><img src="assets/fichas/051.webp" width="600" height="800" alt="Diagnóstico 051: El SSD no aparece en la BIOS ni en el sistema" loading="lazy" ></figure>
+    <figure aria-hidden="true"><img src="assets/fichas/001.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/011.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/021.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/031.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/041.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/051.webp" width="600" height="800" alt="" loading="lazy" ></figure>
+  </div></div>
+  <p class="dica">Toca una ficha para verla en grande</p>
+</section>
+
+<!-- 3 · O QUE CADA DIAGNÓSTICO TEM -->
+<section class="branco possui">
+  <div class="wrap">
+    <h2>CADA DIAGNÓSTICO VISUAL TIENE:</h2>
+    <div class="grade g4">
+      <div class="card"><div class="ico"><svg><use href="#i-sintoma"/></svg></div>El síntoma y las posibles causas en la misma página</div><div class="card"><div class="ico"><svg><use href="#i-ordem"/></svg></div>Un orden recomendado de pruebas, de lo más simple a lo más invasivo</div><div class="card"><div class="ico"><svg><use href="#i-hwsw"/></svg></div>Contenido de hardware y de software</div><div class="card"><div class="ico"><svg><use href="#i-visual"/></svg></div>Formato visual para consultar durante la reparación</div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · URGÊNCIA (carrossel 2) -->
+<section class="escuro">
+  <div class="faixa" style="margin-top:0"><div class="trilho" id="trilho2" style="animation-direction:reverse">
+    <figure><img src="assets/fichas/063.webp" width="600" height="800" alt="Diagnóstico 063: Capacitores hinchados o con fuga en la placa" loading="lazy" ></figure><figure><img src="assets/fichas/071.webp" width="600" height="800" alt="Diagnóstico 071: Pantalla azul aparece al iniciar el sistema" loading="lazy" ></figure><figure><img src="assets/fichas/081.webp" width="600" height="800" alt="Diagnóstico 081: Computadora muy lenta en tareas simples" loading="lazy" ></figure><figure><img src="assets/fichas/091.webp" width="600" height="800" alt="Diagnóstico 091: Dispositivo desconocido con alerta amarilla" loading="lazy" ></figure><figure><img src="assets/fichas/102.webp" width="600" height="800" alt="Diagnóstico 102: Wi-Fi conectado, pero sin internet" loading="lazy" ></figure><figure><img src="assets/fichas/111.webp" width="600" height="800" alt="Diagnóstico 111: La computadora no reproduce ningún sonido" loading="lazy" ></figure>
+    <figure aria-hidden="true"><img src="assets/fichas/063.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/071.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/081.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/091.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/102.webp" width="600" height="800" alt="" loading="lazy" ></figure><figure aria-hidden="true"><img src="assets/fichas/111.webp" width="600" height="800" alt="" loading="lazy" ></figure>
+  </div></div>
+  <div class="wrap centro" style="margin-top:34px">
+    <h2>Aprovecha la oferta por tiempo limitado</h2>
+    <p style="font-size:20px;color:#C9D7E0;margin-top:14px">¿Cuánto tiempo más vas a perder buscando qué prueba hacer primero?</p>
+    <a class="btn" href="#oferta">QUIERO ACCEDER AHORA</a>
+  </div>
+</section>
+
+<!-- 5 · PARA QUEM É -->
+<section class="claro ideal">
+  <div class="wrap">
+    <h2>ESTE MATERIAL ES IDEAL PARA TI SI QUIERES</h2>
+    <div class="grade g2">
+      <div class="card"><span class="num">1</span><div><h3>Saber por dónde empezar</h3><p>Recibir una computadora con falla y tener una referencia para ver qué revisiones conviene hacer primero.</p></div></div><div class="card"><span class="num">2</span><div><h3>Dejar de probar piezas al azar</h3><p>Seguir el diagnóstico en un orden lógico, en vez de saltar de una posibilidad a otra.</p></div></div><div class="card"><span class="num">3</span><div><h3>Diagnosticar más rápido</h3><p>Consultar síntomas, causas y pruebas sin abrir diez videos, foros y artículos en medio de la reparación.</p></div></div><div class="card"><span class="num">4</span><div><h3>Cometer menos errores de diagnóstico</h3><p>Revisar los puntos clave antes de concluir y evitar pruebas y cambios de piezas que no hacían falta.</p></div></div><div class="card"><span class="num">5</span><div><h3>Ordenar tu razonamiento técnico</h3><p>Tener una referencia visual para no depender solo de la memoria al analizar cada falla.</p></div></div><div class="card"><span class="num">6</span><div><h3>Atender con más seguridad</h3><p>Saber qué revisar antes de decirle al cliente dónde está el problema.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · TUDO O QUE VOCÊ RECEBE -->
+<section class="branco recebe">
+  <div class="wrap estreito centro">
+    <h2>TODO LO QUE VAS A RECIBIR</h2>
+    <div style="margin-top:18px"><span class="pill">⚡ ACCESO INMEDIATO</span></div>
+    <h3 class="grande">120 DIAGNÓSTICOS ORGANIZADOS PARA CONSULTAR DURANTE EL MANTENIMIENTO</h3>
+    <p class="lead">Identificas el síntoma, abres el diagnóstico que corresponde y revisas las posibles causas y el orden recomendado de las pruebas.</p>
+    <img class="pacote-img" src="assets/pacote.webp" width="1000" height="1000" alt="Caja de los 120 Diagnósticos Visuales con los 4 bonos incluidos" loading="lazy">
+    <div class="caixa" style="text-align:left">
+      <h4>120 Diagnósticos Visuales para Hardware y Software</h4>
+      <p class="rot">12 categorías, 10 diagnósticos en cada una:</p>
+      <ul class="cats"><li><i>1</i>Energía / Fuente de poder</li><li><i>2</i>Video / Pantalla</li><li><i>3</i>Arranque / POST / BIOS</li><li><i>4</i>Temperatura</li><li><i>5</i>Memoria RAM</li><li><i>6</i>Almacenamiento (SSD / disco duro)</li><li><i>7</i>Placa madre / Procesador</li><li><i>8</i>Sistema operativo / Pantalla azul</li><li><i>9</i>Lentitud / Rendimiento</li><li><i>10</i>Controladores (drivers)</li><li><i>11</i>Red e internet</li><li><i>12</i>Audio, USB y periféricos</li></ul>
+      <p class="rot">Cada diagnóstico trae:</p>
+      <ul class="mini"><li>Síntoma observado</li><li>Posibles causas, de la más común a la menos común</li><li>Orden recomendado de pruebas</li><li>Verificaciones importantes</li><li>Observaciones para no equivocarte en el diagnóstico</li><li>Material visual y estandarizado</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · BÔNUS (os 4 leves do briefing; todos no ticket único) -->
+<section class="claro bonus">
+  <div class="wrap estreito">
+    <h2>Y NO TERMINA AHÍ… ¡HAY MÁS!</h2>
+    <p class="sub">También vas a recibir…</p>
+    <span class="pill">🎁 4 BONOS INCLUIDOS</span>
+    <div class="grade">
+      <div class="bon">
+        <img src="assets/bonus-1.webp" width="600" height="600" alt="Checklist de Mantenimiento Preventivo" loading="lazy">
+        <div><span class="tag">BONO #1</span><h3>Checklist de Mantenimiento Preventivo</h3><p>Una secuencia de revisión para usar antes de entregarle la computadora al cliente y no olvidarte de ninguna verificación importante.</p>
+          <p class="val">Valor: <s>US$ 9</s><span>GRATIS</span></p></div>
+      </div><div class="bon">
+        <img src="assets/bonus-2.webp" width="600" height="600" alt="Guía de Compatibilidad: Placa Madre, Procesador y Memoria" loading="lazy">
+        <div><span class="tag">BONO #2</span><h3>Guía de Compatibilidad: Placa Madre, Procesador y Memoria</h3><p>Consulta rápida para revisar compatibilidades y evitar errores en upgrades y armados.</p>
+          <p class="val">Valor: <s>US$ 9</s><span>GRATIS</span></p></div>
+      </div><div class="bon">
+        <img src="assets/bonus-3.webp" width="600" height="600" alt="Lista de Herramientas Esenciales" loading="lazy">
+        <div><span class="tag">BONO #3</span><h3>Lista de Herramientas Esenciales</h3><p>Qué herramientas vale la pena comprar primero, sobre todo si estás empezando.</p>
+          <p class="val">Valor: <s>US$ 9</s><span>GRATIS</span></p></div>
+      </div><div class="bon">
+        <img src="assets/bonus-4.webp" width="600" height="600" alt="Tabla de Pruebas Rápidas" loading="lazy">
+        <div><span class="tag">BONO #4</span><h3>Tabla de Pruebas Rápidas</h3><p>Una hoja resumen con el orden de las pruebas principales para las fallas más comunes. Para imprimir, guardar en el celular o dejar siempre a mano en el banco de trabajo.</p>
+          <p class="val">Valor: <s>US$ 9</s><span>GRATIS</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · OFERTA (ticket único) -->
+<section class="oferta" id="oferta">
+  <div class="wrap">
+    <div class="oferta-card">
+      <div class="fx">🔥 ÚLTIMA OPORTUNIDAD: LA OFERTA TERMINA HOY</div>
+      <div class="in">
+        <h3>ACCESO COMPLETO</h3>
+        <span class="tag">⚡ 120 diagnósticos + 4 bonos</span>
+        <img class="img" src="assets/pacote.webp" width="1000" height="1000" alt="Los 120 Diagnósticos Visuales y los 4 bonos" loading="lazy">
+        <ul class="lista">
+          <li>120 Diagnósticos Visuales para Hardware y Software</li><li>Diagnósticos organizados por síntoma</li><li>Posibles causas y orden recomendado de pruebas</li><li>Contenido de hardware y de software</li><li>Material visual para consulta rápida</li>
+          <li class="b">🎁 Bono #1: Checklist de Mantenimiento Preventivo</li><li class="b">🎁 Bono #2: Guía de Compatibilidad: Placa Madre, Procesador y Memoria</li><li class="b">🎁 Bono #3: Lista de Herramientas Esenciales</li><li class="b">🎁 Bono #4: Tabla de Pruebas Rápidas</li>
+          <li>Acceso de por vida a todo el material</li><li>Garantía de 30 días</li>
+        </ul>
+        <div class="preco">
+          <p class="de">Valor total: <s>US$ 73</s></p>
+          <p class="por">Hoy, por solo:</p>
+          <p class="valor">US$ 17</p>
+          <p class="unico">Pago único · sin mensualidades</p>
+          <span class="eco">Ahorras US$ 56</span>
+        </div>
+        <a class="btn" data-checkout href="#checkout">QUIERO MI ACCESO POR US$ 17</a>
+        <p class="arg">✓ UNA SOLA PIEZA CAMBIADA SIN NECESIDAD PUEDE COSTARTE MÁS QUE ESTE MATERIAL.</p>
+        <p class="arg2">Los diagnósticos se quedan contigo para consultarlos cada vez que llegue una nueva reparación.</p>
+        <p class="seguro">🔒 Compra 100% segura y garantizada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · GARANTIA -->
+<section class="branco garantia">
+  <div class="wrap estreito">
+    <h2>GARANTÍA DE 30 DÍAS: CERO RIESGO PARA TI</h2>
+    <div class="linha">
+      <div class="selo" role="img" aria-label="GARANTÍA 30 DÍAS">
+        <span class="s1">SATISFACCIÓN GARANTIZADA</span>
+        <span class="s2">30 DÍAS</span>
+        <span class="s3">O TU DINERO DE VUELTA</span>
+        <span class="s4">GARANTÍA</span>
+      </div>
+      <div>
+        <p>Si en los próximos 30 días sientes que:</p>
+        <ul><li>los diagnósticos no son lo que esperabas,</li><li>el material no sirve para el tipo de servicio que haces,</li><li>o simplemente no quieres seguir con él,</li></ul>
+        <p class="fim">pides el reembolso y te devolvemos el 100% de tu dinero. Sin preguntas y sin trámites. Todo el riesgo queda de nuestro lado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · COMO É O ACESSO -->
+<section class="claro acesso">
+  <div class="wrap">
+    <h2>CÓMO ES EL ACCESO</h2>
+    <p class="sub">(Mira lo fácil que es acceder a los diagnósticos)</p>
+    <div class="grade g4">
+      <div class="card passo">
+        <div class="ico"><svg><use href="#i-compra"/></svg></div>
+        <span class="n">PASO 1</span>
+        <h3>Completa tu compra</h3><p>Después del pago, tu acceso se libera automáticamente.</p>
+        <ul><li>Pago seguro</li><li>Confirmación inmediata</li><li>Acceso directo al material</li></ul>
+      </div><div class="card passo">
+        <div class="ico"><svg><use href="#i-email"/></svg></div>
+        <span class="n">PASO 2</span>
+        <h3>Revisa tu correo</h3><p>En ese mismo momento te llega un correo con el acceso a los diagnósticos y a los bonos.</p>
+        <ul><li>Llega al instante</li><li>Diagnósticos separados por categoría</li><li>Los 4 bonos incluidos</li></ul>
+      </div><div class="card passo">
+        <div class="ico"><svg><use href="#i-baixar"/></svg></div>
+        <span class="n">PASO 3</span>
+        <h3>Descarga los archivos</h3><p>Ábrelos en el celular, la tablet o la computadora.</p>
+        <ul><li>Consulta digital</li><li>Fácil de abrir durante la reparación</li><li>Material organizado</li></ul>
+      </div><div class="card passo">
+        <div class="ico"><svg><use href="#i-consulta"/></svg></div>
+        <span class="n">PASO 4</span>
+        <h3>Consulta mientras reparas</h3><p>Abre el diagnóstico en el momento de la reparación.</p>
+        <ul><li>Búsqueda por síntoma y categoría</li><li>Consulta mientras atiendes</li><li>Acceso de por vida</li></ul>
+      </div>
+    </div>
+    <a class="btn" href="#oferta">QUIERO ACCEDER AHORA</a>
+  </div>
+</section>
+
+<!-- 12 · FAQ -->
+<section class="branco faq">
+  <div class="wrap estreito">
+    <h2>PREGUNTAS FRECUENTES</h2>
+    <div style="margin-top:26px">
+      <details><summary>¿Es un curso de mantenimiento?</summary><p>No. Los 120 Diagnósticos Visuales son un material de consulta para apoyarte durante el diagnóstico de computadoras. La idea no es enseñarte mantenimiento desde cero, sino organizar síntomas, posibles causas y pruebas para que tengas una referencia rápida cuando la necesites.</p></details><details><summary>Ya hice un curso de mantenimiento. ¿Este material me sirve?</summary><p>Sí. De hecho, es uno de los perfiles para los que fue creado. Tal vez ya sabes probar memoria, fuente, SSD y otros componentes. Lo que los diagnósticos te ayudan a ordenar es <b>cuándo revisar cada posibilidad y por dónde empezar</b> según el síntoma que presenta la computadora.</p></details><details><summary>¿Sirve si estoy empezando?</summary><p>Sí. Lo pueden usar estudiantes, técnicos que recién empiezan y personas que arreglan computadoras como ingreso extra. También sirve de apoyo para quien ya atiende clientes y quiere una referencia ordenada durante el diagnóstico.</p></details><details><summary>¿No encuentro esta información gratis en internet?</summary><p>Mucha información técnica está en videos, foros, artículos y manuales. La diferencia es que aquí está organizada para consultar: buscas el síntoma y encuentras las posibles causas y un orden recomendado de pruebas, sin tener que investigar en varias fuentes en medio de la reparación.</p></details><details><summary>¿Sirve para hardware y para software?</summary><p>Sí. Reúne diagnósticos de hardware y de software, incluyendo componentes, BIOS, controladores (drivers) y sistema operativo.</p></details><details><summary>¿Tiene diagnósticos para problemas de Windows?</summary><p>Sí. Las categorías Sistema operativo / Pantalla azul, Controladores (drivers) y Lentitud / Rendimiento cubren fallas de arranque, pantallas azules, drivers y rendimiento.</p></details><details><summary>¿Sirve para laptops?</summary><p>El material está pensado para computadoras de escritorio. Muchas fallas de memoria, almacenamiento, sistema, drivers y red se diagnostican igual en una laptop, pero no trae diagnósticos específicos de laptop.</p></details><details><summary>¿El material va a diagnosticar la computadora solo?</summary><p>No. El diagnóstico técnico lo haces tú. El material es una referencia para ordenar posibles causas, verificaciones y la secuencia de pruebas, para que no dependas solo de la memoria o de búsquedas durante la reparación.</p></details><details><summary>¿Sirve para cualquier falla?</summary><p>Reúne 120 diagnósticos de las fallas y síntomas más comunes de hardware y software. No promete cubrir todas las fallas posibles de cualquier computadora: es una referencia organizada para una gran variedad de situaciones que se repiten en el día a día del mantenimiento.</p></details><details><summary>¿Cómo recibo el material?</summary><p>Al instante, en tu correo electrónico, apenas se confirma el pago. El acceso es de por vida.</p></details><details><summary>¿Tiene mensualidad?</summary><p>No. Es un pago único de US$ 17 y el material es tuyo, con los 4 bonos incluidos.</p></details><details><summary>¿Y si no me gusta?</summary><p>Tienes 30 días de garantía. Si no te sirve, pides el reembolso y te devolvemos el 100% de tu dinero.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 13 · RODAPÉ -->
+<footer>
+  <div class="wrap estreito">
+    <p>© Todos los derechos reservados.</p>
+    <p>Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que sales de Facebook, la responsabilidad no es de ellos sino de nuestro sitio. Hacemos todo lo posible por mostrar claramente el producto. No vendemos tu correo ni tus datos a terceros y nunca enviamos spam.</p>
+    <p><a href="#">Términos de uso</a> · <a href="#">Política de privacidad</a></p>
+  </div>
+</footer>
+
+<div class="zoom" id="zoom" hidden><button type="button" class="zoom-x" aria-label="Cerrar">×</button><img alt=""></div>
+
+<script>
+(function () {
+  // data de hoje na faixa do topo (dd/mm/aaaa)
+  var d = new Date(), z = function (n) { return (n < 10 ? '0' : '') + n; };
+  document.querySelectorAll('.js-data').forEach(function (el) { el.textContent = z(d.getDate()) + '/' + z(d.getMonth() + 1) + '/' + d.getFullYear(); });
+
+  // ?refs contorna de vermelho as imagens emprestadas (rascunho)
+  if (/[?&]refs\b/.test(location.search)) document.documentElement.classList.add('mostra-refs');
+
+  // zoom nas fichas
+  var zoom = document.getElementById('zoom'), zImg = zoom.querySelector('img');
+  document.querySelectorAll('.trilho img').forEach(function (img) {
+    img.addEventListener('click', function () { zImg.src = img.src; zoom.hidden = false; });
+  });
+  zoom.addEventListener('click', function () { zoom.hidden = true; zImg.src = ''; });
+
+  // no celular, tocar na faixa pausa o carrossel
+  document.querySelectorAll('.faixa').forEach(function (f) {
+    f.addEventListener('touchstart', function () { f.classList.add('parado'); }, { passive: true });
+    f.addEventListener('touchend', function () { setTimeout(function () { f.classList.remove('parado'); }, 2500); });
+  });
+
+  // leva as UTMs da campanha até o checkout e marca o InitiateCheckout
+  var q = location.search.replace(/^\?/, '').replace(/(^|&)refs(=[^&]*)?/, '');
+  document.querySelectorAll('a[data-checkout]').forEach(function (a) {
+    var h = a.getAttribute('href') || '';
+    if (q && /^https?:/.test(h)) a.href = h + (h.indexOf('?') >= 0 ? '&' : '?') + q;
+    a.addEventListener('click', function () {
+      window.__indoParaCheckout = true;
+      try { fbq('track', 'InitiateCheckout', { value: 17, currency: 'USD' }); } catch (e) {}
+    });
+  });
+})();
+</script>
+
+
+</body>
+</html>
