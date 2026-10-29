@@ -53,8 +53,7 @@
   "demo": {
     "kicker": "Así es por dentro",
     "h2": "Mira el producto",
-    "h2Destaque": "por dentro",
-    "p": "Dale play y recorre la app: cómo entras, cómo buscas una falla y cómo se ve cada ficha."
+    "h2Destaque": "por dentro"
   },
   "fichas": {
     "h2": "MIRA CÓMO SON LOS DIAGNÓSTICOS QUE VAS A RECIBIR",
