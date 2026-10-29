@@ -13,14 +13,17 @@
     "precos": {
       "_nota": "unico = o que a pessoa paga. valorProducto + soma dos bonus.itens[].valor = ancla (valor total tachado). Ancla definida pelo webdesigner, sem fonte de mercado: o Heitor pode trocar.",
       "unico": 13.9,
-      "valorProducto": 37
+      "valorProducto": 37,
+      "saida": 7.9
     },
     "garantiaDias": 30,
-    "checkout": "#checkout",
-    "_checkout": "TROCAR: quando o gateway estiver definido, colar o link aqui (um lugar só). Todo botão de compra usa este valor e tem o atributo data-checkout.",
+    "checkout": "https://pay.hotmart.com/G108244996N?off=50szl5ln&checkoutMode=10",
+    "_checkout": "Checkout Hotmart da oferta principal (US$ 13,90). Todo botão de compra usa este valor e tem o atributo data-checkout.",
     "backRedirect": false,
-    "_backRedirect": "Desligado: a oferta de saída (promo) ainda não tem preço nem checkout. Ligar só quando o Heitor decidir; aí criar _fonte/promo.html.",
-    "pixelMeta": "TROCAR-PIXEL-META"
+    "_backRedirect": "Liga o back redirect: quem tenta voltar vai para /promo (US$ 7,90). Ligar só quando config.checkoutSaida tiver o link de verdade.",
+    "pixelMeta": "TROCAR-PIXEL-META",
+    "checkoutSaida": "#checkout-saida",
+    "_checkoutSaida": "TROCAR: link Hotmart da oferta de saída (US$ 7,90), usado no promo.html (back redirect)."
   },
   "meta": {
     "titulo": "120 Diagnósticos Visuales para Hardware y Software",
@@ -378,5 +381,23 @@
     "aviso": "Este sitio no está afiliado a Facebook ni a ninguna entidad de Facebook. Una vez que sales de Facebook, la responsabilidad no es de ellos sino de nuestro sitio. Hacemos todo lo posible por mostrar claramente el producto. No vendemos tu correo ni tus datos a terceros y nunca enviamos spam.",
     "termos": "Términos de uso",
     "privacidade": "Política de privacidad"
+  },
+  "promo": {
+    "titulo": "¡Espera! Oferta solo en esta página",
+    "topo": "⚠️ Este descuento desaparece cuando salgas de esta página",
+    "pill": "Última oportunidad",
+    "h1": "Llévate los <span class=\"n\">120 diagnósticos</span> por {{p.saida}}",
+    "sub": "Te ibas sin llevarlo. Por eso bajamos el precio: el mismo material completo, las mismas 120 fichas con síntoma, posibles causas y orden de pruebas.",
+    "itens": [
+      "Los 120 Diagnósticos Visuales para Hardware y Software",
+      "Los 4 bonos incluidos",
+      "App con búsqueda por síntoma + PDF completo",
+      "Acceso inmediato y de por vida",
+      "Garantía de {{garantiaDias}} días"
+    ],
+    "de": "De",
+    "por": "por solo",
+    "cta": "QUIERO MI ACCESO POR {{p.saida}}",
+    "nota": "Pago único · sin mensualidades · 🔒 Compra 100% segura"
   }
 }

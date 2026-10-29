@@ -27,7 +27,8 @@ const P = C.precos;
 const totalBonus = (T.bonus.itens || []).reduce((s, b) => s + (b.valor || 0), 0);
 const ancla = (P.valorProducto || 0) + totalBonus; // valor total tachado = produto + bonus
 T.p = { unico: fmt(P.unico, true), ancla: fmt(ancla, true), ahorro: fmt(ancla - P.unico, true),
-  valorProducto: fmt(P.valorProducto, true), totalBonus: fmt(totalBonus, true) };
+  valorProducto: fmt(P.valorProducto, true), totalBonus: fmt(totalBonus, true),
+  saida: P.saida != null ? fmt(P.saida, true) : '' };
 (T.bonus.itens || []).forEach((b) => { b.valorFmt = fmt(b.valor, true); });
 T.garantiaDias = C.garantiaDias;
 T.base = (C.saida && C.saida !== '.') ? '../' : '';
