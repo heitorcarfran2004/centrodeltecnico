@@ -6,7 +6,7 @@ const path = require('path');
 const pasta = __dirname;
 const s = fs.readFileSync(path.join(pasta, 'index.html'), 'utf8');
 
-const ids = ['trilho', 'trilho2', 'zoom', 'oferta'];
+const ids = ['trilho', 'trilho2', 'oferta'];
 const faltam = ids.filter((i) => !s.includes('id="' + i + '"'));
 console.log('ids dos scripts:', faltam.length ? 'FALTAM ' + faltam.join(', ') : 'todos presentes');
 for (const t of ['trilho', 'trilho2']) {

@@ -51,15 +51,14 @@
     "entrega": "📩 Recibes todo al instante en tu correo electrónico"
   },
   "demo": {
-    "kicker": "Míralo por dentro",
-    "h2": "Compra",
-    "h2Destaque": "sin miedo",
-    "p": "Dale play y mira el producto por dentro: cómo lo recibes, cómo accedes y cómo son las fichas."
+    "kicker": "Así es por dentro",
+    "h2": "Mira el producto",
+    "h2Destaque": "por dentro",
+    "p": "Dale play y recorre la app: cómo entras, cómo buscas una falla y cómo se ve cada ficha."
   },
   "fichas": {
     "h2": "MIRA CÓMO SON LOS DIAGNÓSTICOS QUE VAS A RECIBIR",
     "tabletAlt": "Ficha de diagnóstico abierta en una tablet sobre el banco de trabajo",
-    "dica": "Toca una ficha para verla en grande",
     "tablet": {
       "img": "assets/tablet.webp"
     },
